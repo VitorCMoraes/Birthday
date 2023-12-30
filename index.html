@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Seu Dia</title>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <p class="cabecalho__texto">HOJE É UM DIA SUPER ESPECIAL</p>
+        </header>
+        <main class="principal">
+            <section class="principal__top">
+                <h1 class="principal__top__titulo"> O grande dia chegou! Feliz Aniversário!!</h1>
+                <img class="principal__top__imagem" src="assets/img_topo.jpg" alt="Grande Amanda">
+            </section>
+            <section class="principal__mid">
+                <h2 class="principal__mid__titulo">Uma pequena Carta</h2>
+                <p class="principal__mid__texto">Enfim chegou o grande dia, o dia em que essa pessoinha maravilhosa veio ao mundo. Pessoa essa que não é la muito grande, mas possui um coração enorme. Incrivel como sua enorme simpatia e carisma nunca deixam de alegrar o ambiente em que está. Personalidade marcante e senso de humor meio duvidoso, mas que sempre alegra a todos. Sempre sincera com todos a sua volta e super confiável. Uma moça estudiosa e trabalhadora, em que não mede esforços para correr atrás dos proprios sonhos e objetivos. E ainda assim, sempre disposta a ajudar aqueles que precisam de apoio. A proposito, ja ouviram a voz dessa mulher? Que voz incrivel, uma cantora sensacional, fora os inúmeros instrumentos que ela toca. Tantas qualidades assim e ainda é incrivelmente linda, uma mulher sem defeitos?? E olha que o melhor nem foi contado, é uma mulher totalmente temente a Deus e que se empenha ao maximo para seguir os passos de Jesus e estudar a palavra cada dia mais. Portanto, o dia em que uma pessoa tão incrivel como essa nasceu não só merece, como deve ser lembrado. E aqui estou eu, para lhe desejar não só um feliz aniversário, mas também que todos os seus sonhos se realizem. Você tem um potêncial incrivel para alcançar tudo que almeja e tenho certeza que Deus te abençoará grandemente durante o trajeto. Espero que seu dia seja incrivel e que ganhe muitos e muitos presentes!!
+                </p>
+            </section>
+            <section class="carrossel">
+                <h2 class="carrossel__titulo">Mini album</h2>
+
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img class="imagem__impar1" src="assets/foto (1).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__par2" src="assets/foto (10).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__impar3" src="assets/foto (3).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__par4" src="assets/foto (4).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__impar1" src="assets/foto (5).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__par2" src="assets/foto (6).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__impar3" src="assets/foto (19).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__par4" src="assets/foto (24).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__impar1" src="assets/foto (11).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__par2" src="assets/foto (12).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__impar3" src="assets/foto (8).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__par4" src="assets/foto (14).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__impar1" src="assets/foto (15).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__par2" src="assets/foto (16).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__impar3" src="assets/foto (17).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__par4" src="assets/foto (18).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__impar1" src="assets/foto (13).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__par2" src="assets/foto (20).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__impar3" src="assets/foto (21).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__par4" src="assets/foto (22).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__impar1" src="assets/foto (23).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__par2" src="assets/foto (2).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__impar3" src="assets/foto (25).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__par4" src="assets/foto (26).jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="imagem__impar1" src="assets/foto (27).jpg" alt=""></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </section>
+        </main>
+        <footer class="rodape">
+            <p class="rodape__texto">Aproveite seu dia!</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                speed: 3000,
+                spaceBetween: 100,
+                slidesPerView: 3,
+                autoplay: {
+                    delay: 1,
+                },
+            });
+        </script>
+    </body>
+</html>
