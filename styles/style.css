@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+@keyframes rotate{
+    0% {transform: rotate(345deg);}
+    50% {transform: rotate(375deg);}
+    100% {transform: rotate(345deg);}
+}
+@keyframes rotate1{
+    0% {transform: rotate(375deg);}
+    50% {transform: rotate(345deg);}
+    100% {transform: rotate(375deg);}
+}
+
 :root {
     --cor-background: #FFF2D8;
     --cor-cabecalho-rodape: #BCA37F;
@@ -42,8 +53,9 @@ body {
     width: 30%;
     border: 12px solid var(--cor-polaroid);
     border-bottom: 45px solid var(--cor-polaroid);
-    transform: rotate(8deg);
+    animation: rotate 3s infinite;
 }
+
 
 .principal__mid {
     text-align: center;
@@ -74,24 +86,12 @@ body {
     margin: 1em;
 }
 
-.imagem__impar1, .imagem__par1 {
-    transform: rotate(5deg);
+.imagem__par {
+    animation: rotate 3s infinite;
 }
 
-.imagem__impar2, .imagem__par2 {
-    transform: rotate(352deg);
-}
-
-.imagem__impar3, .imagem__par3 {
-    transform: rotate(8deg);
-}
-
-.imagem__impar4, .imagem__par4 {
-    transform: rotate(355deg);
-}
-
-.swiper-button-prev, .swiper-button-next {
-    display: none;
+.imagem__impar {
+    animation: rotate1 3s infinite;
 }
 
 .rodape {
