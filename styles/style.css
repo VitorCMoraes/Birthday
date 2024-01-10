@@ -12,25 +12,27 @@
 }
 
 :root {
-    --cor-background: #FFF2D8;
-    --cor-cabecalho-rodape: #BCA37F;
-    --cor--letras: #113946;
-    --cor-polaroid: #EAD7BB;
+    --cor--letras: white;
+    --cor-polaroid: linear-gradient(180deg, #f2bfff 0, #d5aeff 25%, #b99df2 50%, #9e8cd6 75%, #867bbc 100%);
 
     --fonte: 'Montserrat', sans-serif;
 }
 
 body {
     box-sizing: border-box;
-    background-color: var(--cor-background);
+    background: url(../assets/luz.avif) no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
     color: var(--cor--letras);
     font-family: var(--fonte);
 }
 
 .cabecalho {
     text-align: center;
-    background-color: var(--cor-cabecalho-rodape);
     padding: 1em 5%;
+    border-bottom: 1px solid white;
+    box-shadow: 0 0 30px white;
 }
 
 .cabecalho__texto {
@@ -51,9 +53,12 @@ body {
 
 .principal__top__imagem {
     width: 30%;
-    border: 12px solid var(--cor-polaroid);
-    border-bottom: 45px solid var(--cor-polaroid);
+    border: 12px solid;
+    border-bottom: 45px solid;
+    border-image-slice: 1;
+    border-image-source: var(--cor-polaroid);
     animation: rotate 3s infinite;
+    box-shadow: 0 0 30px white;
 }
 
 
@@ -81,9 +86,12 @@ body {
 
 .swiper-slide img {
     width: 125%;
-    border: 10px solid var(--cor-polaroid);
-    border-bottom: 32px solid var(--cor-polaroid);
-    margin: 1em;
+    border: 10px solid;
+    border-bottom: 32px solid;
+    border-image-slice: 1;
+    border-image-source: var(--cor-polaroid);
+    margin: 2em;
+    box-shadow: 0 0 15px white;
 }
 
 .imagem__par {
@@ -96,8 +104,9 @@ body {
 
 .rodape {
     text-align: center;
-    background-color: var(--cor-cabecalho-rodape);
     padding: 1em 5%;
+    border-top: 1px solid white;
+    box-shadow: 0 0 30px white;
 }
 
 .rodape__texto {
@@ -124,8 +133,11 @@ body {
 
     .principal__top__imagem {
         width: 20%;
-        border: 20px solid var(--cor-polaroid);
-        border-bottom: 90px solid var(--cor-polaroid);
+        border: 20px solid;
+        border-bottom: 90px solid;
+        border-image-slice: 1;
+        border-image-source: var(--cor-polaroid);
+        box-shadow: 0 0 30px white;
     }
 
     .principal__mid {
@@ -148,8 +160,11 @@ body {
 
     .swiper-slide img {
         width: 50%;
-        border: 25px solid var(--cor-polaroid);
-        border-bottom: 120px solid var(--cor-polaroid);
+        border: 25px solid;
+        border-bottom: 120px solid;
+        border-image-slice: 1;
+        border-image-source: var(--cor-polaroid);
+        box-shadow: 0 0 30px white;
         margin: 4em;
     }
 
