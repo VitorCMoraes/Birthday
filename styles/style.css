@@ -115,6 +115,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+    .cabecalho {
+        padding: 1.5em;
+    }
+
     .cabecalho__texto {
         font-size: 1.5rem;
     }
