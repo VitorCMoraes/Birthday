@@ -13,7 +13,7 @@
 
 :root {
     --cor--letras: white;
-    --cor-polaroid: linear-gradient(180deg, #f2bfff 0, #d5aeff 25%, #b99df2 50%, #9e8cd6 75%, #867bbc 100%);
+    --cor-polaroid: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 
     --fonte: 'Montserrat', sans-serif;
 }
